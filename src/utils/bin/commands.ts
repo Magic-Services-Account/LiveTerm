@@ -34,21 +34,16 @@ export const about = async (args: string[]): Promise<string> => {
 Welcome to my website!
 More about me:
 'sumfetch' - short summary.
-'resume' - my latest resume.
 'readme' - my github readme.`;
-};
-
-export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
-  return 'Opening resume...';
 };
 
 // Donate
 export const donate = async (args: string[]): Promise<string> => {
   return `thank you for your interest. 
 here are the ways you can support my work:
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.paypal}" target="_blank">paypal</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.patreon}" target="_blank">patreon</a></u>
+- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.donate_website}" target="_blank">Website</a></u>
+- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.doge}" target="_blank">dogecoin:D7VuQkUtUbcfijT1vxKsgjWtuLBXR6NUJG</a></u>
+- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.bitcoin}" target="_blank">bitcoin:bc1qk7xvey59l9h0umz9vufs89hwwrz9t9zwhqyqaj</a></u>
 `;
 };
 
@@ -61,34 +56,24 @@ export const email = async (args: string[]): Promise<string> => {
 export const github = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`);
 
-  return 'Opening github...';
+  return 'Opening GitHub...';
 };
 
-export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+export const codeberg = async (args: string[]): Promise<string> => {
+  window.open(`https://www.codeberg.org/${config.social.codeberg}/`);
 
-  return 'Opening linkedin...';
+  return 'Opening Codeberg...';
 };
 
 // Search
-export const google = async (args: string[]): Promise<string> => {
-  window.open(`https://google.com/search?q=${args.join(' ')}`);
-  return `Searching google for ${args.join(' ')}...`;
-};
-
 export const duckduckgo = async (args: string[]): Promise<string> => {
   window.open(`https://duckduckgo.com/?q=${args.join(' ')}`);
   return `Searching duckduckgo for ${args.join(' ')}...`;
 };
 
-export const bing = async (args: string[]): Promise<string> => {
-  window.open(`https://bing.com/search?q=${args.join(' ')}`);
-  return `Wow, really? You are using bing for ${args.join(' ')}?`;
-};
-
-export const reddit = async (args: string[]): Promise<string> => {
-  window.open(`https://www.reddit.com/search/?q=${args.join(' ')}`);
-  return `Searching reddit for ${args.join(' ')}...`;
+export const startpage = async (args: string[]): Promise<string> => {
+  window.open(`https://www.startpage.com/do/search?query=${args.join(' ')}`);
+  return `Searching duckduckgo for ${args.join(' ')}...`;
 };
 
 // Typical linux commands
@@ -130,25 +115,37 @@ export const nvim = async (args: string[]): Promise<string> => {
 };
 
 export const emacs = async (args?: string[]): Promise<string> => {
-  return `you know what? just use vscode.`;
+  return `you know what? just use 'vscode'.`;
+};
+
+export const vscode = async (args?: string[]): Promise<string> => {
+  return `To much Microsoft. What about 'vscodium'?`;
+};
+
+export const vscodium = async (args?: string[]): Promise<string> => {
+  window.open(`https://vscodium.com`);
+  return `Opening VSCodium`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
+  window.open('https://invidious.snopyta.org/watch?v=dQw4w9WgXcQ', '_blank'); // ...I'm sorry
   return `Permission denied: with little power comes... no responsibility? `;
 };
 
 // Banner
 export const banner = (args?: string[]): string => {
   return `
-█████        ███                       ███████████                                   
-░░███        ░░░                       ░█░░░███░░░█                                   
- ░███        ████  █████ █████  ██████ ░   ░███  ░   ██████  ████████  █████████████  
- ░███       ░░███ ░░███ ░░███  ███░░███    ░███     ███░░███░░███░░███░░███░░███░░███ 
- ░███        ░███  ░███  ░███ ░███████     ░███    ░███████  ░███ ░░░  ░███ ░███ ░███ 
- ░███      █ ░███  ░░███ ███  ░███░░░      ░███    ░███░░░   ░███      ░███ ░███ ░███ 
- ███████████ █████  ░░█████   ░░██████     █████   ░░██████  █████     █████░███ █████
-░░░░░░░░░░░ ░░░░░    ░░░░░     ░░░░░░     ░░░░░     ░░░░░░  ░░░░░     ░░░░░ ░░░ ░░░░░ 
+██████   ██████                     ███           █████        ███  █████              
+░██████ ██████                     ░░░           ░░███        ░░░  ░░███               
+░███░█████░███   ██████    ███████ ████   ██████  ░███        ████  ░███ █████  ██████ 
+░███░░███ ░███  ░░░░░███  ███░░███░░███  ███░░███ ░███       ░░███  ░███░░███  ███░░███
+░███ ░░░  ░███   ███████ ░███ ░███ ░███ ░███ ░░░  ░███        ░███  ░██████░  ░███████ 
+░███      ░███  ███░░███ ░███ ░███ ░███ ░███  ███ ░███      █ ░███  ░███░░███ ░███░░░  
+█████     █████░░████████░░███████ █████░░██████  ███████████ █████ ████ █████░░██████ 
+░░░░     ░░░░░  ░░░░░░░░  ░░░░░███░░░░░  ░░░░░░  ░░░░░░░░░░░ ░░░░░ ░░░░ ░░░░░  ░░░░░░  
+                          ███ ░███                                                     
+                         ░░██████                                                      
+                          ░░░░░░
 
 Type 'help' to see the list of available commands.
 Type 'sumfetch' to display summary.
