@@ -8,15 +8,13 @@
     "codeberg": "MagicLike"
   },
   "email": "contact@magiclike.net",
-  "ps1_hostname": "terminal",
+  "ps1_hostname": "magicterm",
   "ps1_username": "visitor",
   "repo": "https://github.com/MagicLike/LiveTerm",
   "donate_urls": {
-    "donate_website": "https://magiclike.codeberg.page/#donate",
-    "doge": "dogecoin:D7VuQkUtUbcfijT1vxKsgjWtuLBXR6NUJG",
-    "bitcoin": "bitcoin:bc1qk7xvey59l9h0umz9vufs89hwwrz9t9zwhqyqaj"
+    "donate_website": "https://magiclike.net/#donate"
   },
-  "website": "https://magiclike.codeberg.page",
+  "website": "https://magiclike.net",
   "colors": {
     "light": {
       "background": "#FBF1C9",

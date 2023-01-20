@@ -42,8 +42,6 @@ export const donate = async (args: string[]): Promise<string> => {
   return `thank you for your interest. 
 here are the ways you can support my work:
 - <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.donate_website}" target="_blank">Website</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.doge}" target="_blank">dogecoin:D7VuQkUtUbcfijT1vxKsgjWtuLBXR6NUJG</a></u>
-- <u><a class="text-light-blue dark:text-dark-blue underline" href="${config.donate_urls.bitcoin}" target="_blank">bitcoin:bc1qk7xvey59l9h0umz9vufs89hwwrz9t9zwhqyqaj</a></u>
 `;
 };
 
