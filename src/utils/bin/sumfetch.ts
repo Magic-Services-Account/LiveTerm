@@ -17,8 +17,8 @@ const sumfetch = async (args: string[]): Promise<string> => {
 (*(/(/(((#(#((#(((//////((#/%%%#%(%./%%   -----------
 ((((%**/#&%(//#((##%#//(&%%(/&%&%%%//##    DONATE 
 ((/(#*(#(##%#@@/%%%%*/(%%%%%#(//@%&.##(    <u><a href="${config.donate_urls.donate_website}" target="_blank">${config.donate_urls.donate_website}</a></u>
-(############%%%#%(%/(#%%%%%%&.## (###(     <u><a href="${config.donate_urls.doge}" target="_blank">${config.donate_urls.doge}</a></u>
-##########%%%%%%%%#(/(%&&&&&&%%%%%%%###     <u><a href="${config.donate_urls.bitcoin}" target="_blank">${config.donate_urls.bitcoin}</a></u>
+(############%%%#%(%/(#%%%%%%&.## (###(
+##########%%%%%%%%#(/(%&&&&&&%%%%%%%###
 ########%%%%%%%%%%%&&&&&&&&&&&&&&%%%%##
 
 `;
@@ -38,8 +38,7 @@ const sumfetch = async (args: string[]): Promise<string> => {
     ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓           -----------
       ▓▓▓   ▐▓▓   ▓▓   ▓▓▓   ▓▓▀             DONATE 
         ▀▓▓▄▄ ▀▓▓▄▓▓▄▓▓▓▄▄▓▓▀                <u><a href="${config.donate_urls.donate_website}" target="_blank">${config.donate_urls.donate_website}</a></u>
-            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                    <u><a href="${config.donate_urls.doge}" target="_blank">${config.donate_urls.doge}</a></u>
-                                              <u><a href="${config.donate_urls.bitcoin}" target="_blank">${config.donate_urls.bitcoin}</a></u>
+            ▀▓▓▓▓▓▓▓▓▓▓▓▀▀                  
 
 `;
   }
