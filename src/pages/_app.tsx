@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/global.css';
+import '<script async defer data-website-id="9bd731cb-7029-4714-a771-c55e093928a8" src="https://magiclytics.magiclike.net/magiclytics.js"></script>';
 import Head from 'next/head';
 
 const App = ({ Component, pageProps }) => {
